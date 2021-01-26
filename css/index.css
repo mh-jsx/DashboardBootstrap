@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+body {
+  background-color: #f7f9fc;
+  color: #71767c;
+}
+.navbar {
+  background-color: #ffff;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+/* search icon color #6C757D */
+
+/* search */
+.nav-item input {
+  background-color: #f3f6fb;
+  outline: none;
+  border: 0;
+  padding: 8px;
+  padding-right: 35px;
+
+  background-image: url(../content/ico_search.svg);
+  background-repeat: no-repeat;
+  background-position: 97% center;
+  background-size: 1.5rem;
+}
+.nav-item input:focus {
+  background-color: #f3f6fb;
+  outline: none;
+  border: 0;
+  box-shadow: inset 0 0px 0 #ddd;
+}
+@media (max-width: 576px) {
+  .nav-item input {
+    display: none;
+  }
+}
+/* end search */
+
+/* Hide Search cancel appearance */
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: unset;
+}
+.mega-dropdown-toggleIcon {
+  width: 20px;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .mega-menu-link {
+    margin-left: 20px;
+  }
+}
+.profile-menu td:nth-child(2) {
+  font-weight: 500;
+}
+.horizontalL {
+  opacity: 0.1;
+}
+.flag {
+  width: 18px;
+}
+.dropdown-menu span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #71767c;
+}
+.profile-menu table td:nth-child(4) {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .profile-menu table td:nth-child(1),
+  .profile-menu table td:nth-child(2),
+  .profile-menu table td:nth-child(3) {
+    display: none;
+  }
+  .profile-menu table td:nth-child(4) {
+    display: inline-block;
+  }
+}
+
+.profile-menu .dropdown-menu {
+  margin-left: 80px;
+}
+@media (max-width: 576px) {
+  .profile-menu .dropdown-menu {
+    margin-left: -100px;
+  }
+}
+
+.notification-menu .dropdown-menu {
+  margin-left: -300px;
+  background: none;
+}
+
+.indicator span {
+  background: #3f80ea;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  padding: 1px;
+  text-align: center;
+  font-size: 0.675rem;
+  color: #fff;
+  display: block;
+}
+.indicator {
+  position: absolute;
+  top: 0;
+  right: -8px;
+  transition: top 0.1s ease-out;
+}
+.notification:hover .indicator {
+  top: -4px;
+}
+
+/* notification list group */
+
+.notification-detail img {
+  width: 40px;
+}
+.description h5 {
+  font: 0.9rem;
+}
+.dropdown-notification {
+  width: 400px !important;
+}
+
+.notification-detail p {
+  line-height: 0.2rem;
+  font-size: 0.8rem;
+}
+.notification-detail p h5 {
+  font-size: 0.9 rem;
+}
+@media (max-width: 576px) {
+  .dropdown-notification {
+    width: 250px !important;
+    margin-left: 170px;
+  }
+  .notification-detail p,
+  h5 {
+    line-height: 0.8rem;
+  }
+
+  .notification-detail .details {
+    padding-left: 20px;
+  }
+}
+
+/* cards */
+
+.cards [class*="col"] {
+  color: #292929;
+  height: 150px;
+}
+
+.cards .card {
+  height: 140px;
+
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+.cards .row {
+  box-sizing: border-box;
+}
+
+.cards .first-card {
+  background-color: #e0eafc;
+}
+.card-image {
+  height: 100%;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  background-image: url(../content/customer-support.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.first-card .details {
+  color: #4282ea;
+}
+
+.card-badge {
+  font-size: 0.8rem;
+  padding: 1px 4px;
+  font-weight: 500;
+}
+.card-badge-success {
+  background-color: #dff4e6;
+  color: #59c47e;
+}
+.card-badge-danger {
+  background-color: #f8e1e0;
+  color: #da5955;
+}
+.card-badge-warning {
+  background-color: #ffeeaf;
+  color: #ddb524;
+}
+.card {
+  border-radius: 5px;
+  color: #71767c;
+}
+
+.card-right-image {
+  background-color: #e0eafc;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* calender */
+
+.card-table {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  color: #71767c;
+}
+.card-table a {
+  float: right;
+  font-size: 30px;
+}

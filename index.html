@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <!-- navigation -->
+
+    <nav class="navbar navbar-expand navbar-light">
+
+        <div class="container-fluid align-items-center mx-2">
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav ">
+
+                    <li class="nav-item">
+                        <input class="form-control" type="search" placeholder="Search...">
+                    </li>
+
+                    <!-- mega drop down menu, using flex -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="mega-menu-link"> Mega&nbsp;Menu </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="d-md-flex align-items-start justify-content-start mx-2 my-2">
+                                <div>
+                                    <div class="dropdown-header">UI Elements</div>
+                                    <a class="dropdown-item" href="#">Alerts</a>
+                                    <a class="dropdown-item" href="#">Buttons</a>
+                                    <a class="dropdown-item" href="#">Cards</a>
+                                    <a class="dropdown-item" href="#">Carousel</a>
+                                    <a class="dropdown-item" href="#">General</a>
+                                    <a class="dropdown-item" href="#">Grid</a>
+                                    <a class="dropdown-item" href="#">Modals</a>
+                                    <a class="dropdown-item" href="#">Tabs</a>
+                                    <a class="dropdown-item" href="#">Typography</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Forms</div>
+                                    <a class="dropdown-item" href="#">Layouts</a>
+                                    <a class="dropdown-item" href="#">Basic Inputs</a>
+                                    <a class="dropdown-item" href="#">Input Groups</a>
+                                    <a class="dropdown-item" href="#">Advanced Inputs</a>
+                                    <a class="dropdown-item" href="#">Editors</a>
+                                    <a class="dropdown-item" href="#">Validation</a>
+                                    <a class="dropdown-item" href="#">Wizard</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Tables</div>
+                                    <a class="dropdown-item" href="#">Basic Tables</a>
+                                    <a class="dropdown-item" href="#">Responsive Table</a>
+                                    <a class="dropdown-item" href="#">Table with Buttons</a>
+                                    <a class="dropdown-item" href="#">Column Search</a>
+                                    <a class="dropdown-item" href="#">Multi Selection</a>
+                                    <a class="dropdown-item" href="#">Ajax Sourced Data</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!--  end (mega drop down menu), created using flex -->
+            </div>
+            <!-- notification menu -->
+            <div class="nav-item dropdown navbar-nav mx-2 notification-menu ">
+                <a class="nav-link" href="" data-bs-toggle="dropdown">
+
+                    <div class="position-relative notification">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-message-circle align-middle">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                            </path>
+                        </svg>
+                        <div class="indicator">
+                            <span>4</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="dropdown-menu border-0">
+                    <div class="list-group dropdown-notification">
+                        <span class=" list-group-item  p-3 text-center">4 New Messages</span>
+                        <a href="" class=" list-group-item list-group-item-action p-3">
+
+                            <div class="row notification-detail">
+                                <div class="col-2">
+                                    <img src="content/profile2.png" alt="">
+                                </div>
+                                <div class="col-10 details">
+                                    <h5>Ash H</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class=" list-group-item list-group-item-action p-3">
+
+                            <div class="row notification-detail">
+                                <div class="col-2">
+                                    <img src="content/profile3.png" alt="">
+                                </div>
+                                <div class="col-10 details">
+                                    <h5>Ash H</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class=" list-group-item list-group-item-action p-3">
+
+                            <div class="row notification-detail">
+                                <div class="col-2">
+                                    <img src="content/profile4.png" alt="">
+                                </div>
+                                <div class="col-10 details">
+                                    <h5>Ash H</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class=" list-group-item list-group-item-action p-3">
+
+                            <div class="row notification-detail">
+                                <div class="col-2">
+                                    <img src="content/profile5.png" alt="">
+                                </div>
+                                <div class="col-10 details">
+                                    <h5>Ash H</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- flag menu -->
+            <div class="nav-item dropdown navbar-nav ml"><a class="nav-link" href="#" data-bs-toggle="dropdown"
+                    href=""><img class="flag" src="content/us-flag.png" alt=""></a>
+                <div class="dropdown-menu" style="margin-left: -100px;">
+
+                    <a class="dropdown-item" href="#"> <img class="flag mx-3 text-center" src="content/usflag.png"
+                            alt="us flag"> <span>English</span>
+                    </a>
+                    <a class="dropdown-item" href="#"> <img class="flag mx-3 text-center" src="content/spanish-flag.png"
+                            alt="us flag"> <span>Spanish</span>
+                    </a>
+                    <a class="dropdown-item" href="#"> <img class="flag mx-3 text-center" src="content/german-flag.svg"
+                            alt="us flag"> <span>German</span>
+                    </a>
+                    <a class="dropdown-item" href="#"> <img class="flag mx-3 text-center" src="content/dutch-flag.svg"
+                            alt="us flag" href="#"> <span>Dutch</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Profile Menu -->
+
+            <div class="nav-item dropdown  navbar-nav profile-menu">
+
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <table>
+                        <tr>
+                            <td><img src="content/profile1.png" alt=""></td>
+                            <td class="px-2">Chris&nbsp;Wood</td>
+
+
+                            <td><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg></td>
+
+                            <td class="px-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-settings align-middle">
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path
+                                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                    </path>
+                                </svg></td>
+                        </tr>
+                    </table>
+                </a>
+
+                <div class="dropdown-menu">
+
+                    <a class=" dropdown-item" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-user align-middle mr-1">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg> Profile</a>
+
+                    <a class="dropdown-item" href=""> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-pie-chart align-middle mr-1">
+                            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                            <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                        </svg> Analytics</a>
+                    <hr class="horizontalL"">
+                    <a class=" dropdown-item" href="">Settings & Privacy</a>
+                    <a class="dropdown-item" href="">Help</a>
+                    <a class="dropdown-item" href="">Sign out</a>
+                </div>
+            </div>
+            <!-- end Profile Menu -->
+        </div>
+    </nav>
+
+
+    <!-- cards -->
+
+    <div class="container-fluid cards ">
+
+        <div class="row my-5" style="box-sizing: border-box;">
+            <div class="col-xxl-3 col-xl-6 col-sm-6">
+                <div class="card border-0 m-3">
+                    <div class="card-body first-card">
+                        <div class="card-image"></div>
+                        <div class="details">
+                            <h4>Welcome back Chris!</h4>
+                            <p>Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-6 col-sm-6">
+                <div class="card border-0 m-3">
+                    <div class="card-body">
+                        <div class="details">
+                            <h5>$ 24.300</h5>
+                            <p>Total Earnings .</p>
+                            <span class="card-badge card-badge-success">+5.3%</span>
+                            <span>Since last week</span>
+                        </div>
+
+                        <div class="card-right-image d-inline-block ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke=" #4282ea" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-dollar-sign align-middle text-success">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-6 col-sm-6">
+                <div class="card border-0 m-3">
+                    <div class="card-body">
+                        <div class="details">
+                            <h5>43</h5>
+                            <p>Pending Orders .</p>
+                            <span class="card-badge card-badge-danger">-4.25%</span>
+                            <span>Since last week</span>
+                        </div>
+                    </div>
+
+                    <div class="card-right-image d-inline-block ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#4282ea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-shopping-bag align-middle text-danger">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-6 col-sm-6">
+                <div class="card border-0 m-3">
+                    <div class="card-body">
+                        <div class="details">
+                            <h5>$ 18.700</h5>
+                            <p>Total Revenue .</p>
+                            <span class="card-badge card-badge-success">+8.65%</span>
+                            <span>Since last week</span>
+                        </div>
+                    </div>
+
+                    <div class="card-right-image d-inline-block ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke=" #4282ea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-dollar-sign align-middle text-success">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- card table -->
+
+    <div class="container bg-white card-table p-5 " style="overflow-x: auto;">
+        <h5>Latest Projects</h5> <a href=" #">...</a>
+
+        <table class="table" ">
+            <thead>
+                <tr>
+                    <th scope=" col">Name</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">End Date</th>
+            <th scope="col">Status</th>
+            <th scope="col">Assignee</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mark</td>
+                    <td>01/01/2018</td>
+                    <td>01/01/2018</td>
+                    <td><span class="badge card-badge-success">success</span></td>
+                    <td>Carl Jenkins
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mark</td>
+                    <td>01/01/2018</td>
+                    <td>01/01/2018</td>
+                    <td><span class="badge card-badge-danger">cancelled</span></td>
+                    <td>Carl Jenkins
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Mark</td>
+                    <td>01/01/2018</td>
+                    <td>01/01/2018</td>
+                    <td><span class="badge card-badge-success">success</span></td>
+                    <td>Carl Jenkins
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td>Mark</td>
+                    <td>01/01/2018</td>
+                    <td>01/01/2018</td>
+                    <td><span class="badge card-badge-warning">In progress</span></td>
+                    <td>Carl Jenkins
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <!-- import scripts -->
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
