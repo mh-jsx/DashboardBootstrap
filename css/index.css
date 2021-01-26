@@ -9,7 +9,7 @@ body {
   background-color: #f7f9fc;
   color: #71767c;
 }
-.navbar {
+.navbar:nth-child(1) {
   background-color: #ffff;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(166, 173, 201, 0.2);
@@ -233,4 +233,21 @@ input[type="search"]::-webkit-search-cancel-button {
 .card-table a {
   float: right;
   font-size: 30px;
+}
+
+.card-table {
+  margin-bottom: 100px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #71767c;
+}
+
+.card-table .navbar .dropdown-menu a {
+  font-size: 0.8rem;
+}
+.card-table .navbar .dropdown-menu {
+  margin-left: -100px;
 }

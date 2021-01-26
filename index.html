@@ -14,8 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-
-
 </head>
 
 <body>
@@ -324,14 +322,29 @@
 
     <!-- card table -->
 
-    <div class="container bg-white card-table p-5 " style="overflow-x: auto;">
-        <h5>Latest Projects</h5> <a href=" #">...</a>
+    <div class="container bg-white card-table p-5" style="overflow-x: auto;">
+        <h5>Latest Projects</h5>
+
+        <span class="navbar dropdown float-end d-inline-block" style="width: fit-content; height: fit-content;">
+            <a class="nav-link p-0" href="#" data-bs-toggle="dropdown">
+                ...
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </span>
+        <!--  -->
 
         <table class="table" ">
             <thead>
                 <tr>
                     <th scope=" col">Name</th>
-            <th scope="col">Start Date</th>
+            <th scope="col">Start&nbsp;Date</th>
             <th scope="col">End Date</th>
             <th scope="col">Status</th>
             <th scope="col">Assignee</th>
@@ -380,7 +393,30 @@
         </table>
     </div>
 
+    <!-- end tables -->
 
+
+
+    <!-- footer -->
+
+    <footer class="container-fluid px-4" style="border-top: solid 1px rgba(0, 0, 0, 0.09); padding-top:10px;">
+
+        <div class="row ">
+            <div class="col-6">
+                <ul class="list-inline list-unstyled text-left">
+                    <li class="list-inline-item "> <a href="">Support</a> </li>
+                    <li class="list-inline-item"> <a href="">Support</a> </li>
+                    <li class="list-inline-item"> <a href="">Support</a> </li>
+                    <li class="list-inline-item"> <a href="">Support</a> </li>
+                    <li class="list-inline-item"> <a href="">Support</a> </li>
+                </ul>
+            </div>
+            <div class="col-6 ">
+                <li class="list-inline-item float-end"> © 2021 - App </li>
+            </div>
+        </div>
+
+    </footer>
 
     <!-- import scripts -->
     <script src="./bootstrap/js/bootstrap.js"></script>
